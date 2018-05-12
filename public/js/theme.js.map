@@ -1,0 +1,1 @@
+{"version":3,"sources":["test.js"],"names":["test","name","console","log"],"mappings":"aAAA,IAAMA,KAAO,SAACC,GAAQ,MAAA,WAAkBA,GACxCC,QAAQC,IAAIH,KAAK","file":"theme.js","sourcesContent":["const test = (name)=>{return `Oh hai, ${name}`};\r\nconsole.log(test('Bob'));"]}
