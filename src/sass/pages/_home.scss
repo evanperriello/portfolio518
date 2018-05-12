@@ -1,0 +1,18 @@
+.intro {
+    background-image:linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-mid, 1));
+    //background:$dark-grey-1;
+
+    &__content {
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    &__img {
+        border-radius:50%;
+    }
+}
+.web {
+    background:$white;
+    height:50vh;
+}

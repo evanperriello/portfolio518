@@ -9,7 +9,7 @@ const uglify = require('gulp-uglify');
 const sourcemaps = require ('gulp-sourcemaps');
 
 gulp.task('sass', function() {
-    return gulp.src('src/sass/**/*.scss')
+    return gulp.src('src/sass/main.scss')
     .pipe(sourcemaps.init())
     .pipe(concat('style.scss'))
     .pipe(sass().on('error', sass.logError))
