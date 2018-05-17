@@ -1,7 +1,12 @@
 .intro {
-    background-image:linear-gradient(to right, rgba($color-primary-light, .8), rgba($color-primary-mid, 1));
-    //background:$dark-grey-1;
+    background-image: linear-gradient(to bottom, rgba($white, .7), rgba($white, .9)), url(/img/leafy-bg-bw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    padding-top:10rem;
+    color:$dark-grey-2;
 
+    
     &__content {
         display:flex;
         align-items:center;
@@ -13,6 +18,7 @@
     }
 }
 .web {
-    background:$white;
-    height:50vh;
+    background: $dark-grey-2;
+    color:$light-grey-1;
+
 }

@@ -4,7 +4,12 @@ body {
     font-family: $Jsans;
     font-weight: 400;
     line-height:1.5;
+
 }
+p {
+    padding:.5rem;
+}
+
 .page-title {
     font-size:3rem;
     font-weight:300;
@@ -26,8 +31,11 @@ body {
     &__text{
         font-size:2.2rem;
         text-align:center;
-        color:$dark-grey-2;
+
     }
 }
-
+.h3 {
+    margin: 3rem 0;
+    font-weight:400;
+}
     
