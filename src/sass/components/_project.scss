@@ -3,6 +3,7 @@
     width:100%;
     position:relative;
     z-index:1;
+    overflow:hidden;
 }
 .project {
     display:flex;
@@ -14,8 +15,14 @@
     width:100%;
     height:100%;
     opacity:0;
-    transition:all ease-in-out .8s;
-    transform:translateX(-60%);
+    transition:all ease-in .5s;
+    
+    &--right {
+        transform: translateX(60%);
+    }
+    &--left {
+         transform:translateX(-60%);
+    }
 
     &--shown {
         opacity:1;
@@ -30,7 +37,8 @@
     }
 
     &__text {
-        flex:1;
+        margin-top:2rem;
+        flex:3;
     }
 
     &__subtitle {
@@ -40,7 +48,7 @@
 
     &__preview {
         margin:3rem;
-        flex: 1;
+        flex: 2;
         display:flex;
         flex-direction:column;
     }
