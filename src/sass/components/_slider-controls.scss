@@ -1,0 +1,21 @@
+.slide-control{
+    font-size:8rem;
+    color:inherit;
+    opacity:.5;
+    position:absolute;
+    z-index:100;
+    cursor:pointer;
+    transition: all .2s;
+    top:50%;
+    transform: translateY(-50%);
+
+    &:hover {opacity:1;}
+
+    &--next {
+        right:1rem;
+    }
+    &--prev {
+        left:1rem;
+    }
+
+}

@@ -33,7 +33,7 @@
         </header>
 
         <section class="section intro">
-            <div class="container intro__content">
+            <div class="container container--content intro__content">
                 <img class="intro__img" alt="Evan Perriello's profile photo" src="img/profilePhoto.jpg">
                     <h2 class="section__title">I'm Evan,</h2>
                     <div class="section__text">
@@ -47,6 +47,7 @@
                             <img class="toolbox__tool" src="img/icons/html5-original-wordmark.svg" alt="HTML 5">
                             <img alt="CSS 3" src="img/icons/css3-original-wordmark.svg" class="toolbox__tool">
                             <img alt="JavaScript" src="img/icons/javascript-original.svg" class="toolbox__tool">
+                            <img alt="JQuery" src="img/icons/jquery-plain-wordmark.svg" class="toolbox__tool">
                             <img alt="Sass" src="img/icons/sass-original.svg" class="toolbox__tool"> 
                             <img alt="Bootstrap" src="img/icons/bootstrap-plain-wordmark.svg" class="toolbox__tool">
                             <img alt="Gulp" src="img/icons/gulp-plain.svg" class="toolbox__tool"> 
@@ -59,55 +60,92 @@
             </div>
         </section>
         <section class="section web">
-            <div class="container web__content">
-                <h2 class="section__title">Web Projects</h2>
-                <div class="section__text">
-
-                </div>  
-                <div class="project">
-                    <div class="project__preview">
-                        <img alt="whelmed todo app" src="img/whelmed.jpg">
-                        <div class="project__buttons">
-                           <a class="btn btn--outline" href="#">
-                                visit the site
+                <div id="web-prev" class="slide-control slide-control--prev">&lt;</div>
+                <div id="web-next" class="slide-control slide-control--next">&gt;</div>
+            <div class="container container--content web__content">
+                <h2 class="section__title">Selected Web Projects</h2>
+                <div class="project-group" id="web-projects">
+                    <div class="project project--shown">
+                        <div class="project__preview">
+                            <a href="https://evanperriello.github.io/whelmed-app-redux/">
+                                <img class="project__img" alt="whelmed todo app" src="img/whelmed.jpg">
                             </a>
-                            <a class="btn btn--outline" href="#">
-                                view on github
-                            </a> 
+                            <div class="project__buttons">
+                            <a class="btn btn--outline" href="https://evanperriello.github.io/whelmed-app-redux/">
+                                    visit the site
+                                </a>
+                                <a class="btn btn--outline" href="https://github.com/evanperriello/whelmed-app-redux">
+                                    view on github
+                                </a> 
+                            </div>
                         </div>
-                    </div>
-                          
-                    <div class="project__text">
-                        <h3 class="project__title">whelmed
-                        <span class="project__subtitle">A to-do app allowing mutiple lists built with React, Redux, and SASS.</span></h3>
-                        <p>When I first started playing with React and Redux, I tangled myself up in all sorts of logic knots, because, while I understood a good bit of JavaScript, I was still pretty uncomfortable with some of its more advanced features, including those of ES6.</p>
-                        <p>I built this project with create-react-app after taking a real deep dive into JS fundamentals and some of the functional-programming paradigms on which React and Redux are based. I focused on creating code that was both functional and elegant.</p>
-                        <p>The ability to add multiple lists created a data structure that was a bit more complex and meant that my actions and reducers had to dig further than in a standard tutorial to-do application.</p>
-                        <p>I also wanted to make use of SASS and flexbox, using Block-Element-Modifier organizational methods to create a responsive, maintainable design that follows best practices.</p>
-
-                    </div>
-                    
-
-                </div>
-                <div class="project">
-                    <div class="project__img">
                             
+                        <div class="project__text">
+                            <h3 class="project__title">whelmed
+                            <span class="project__subtitle">A to-do app allowing mutiple lists built with React, Redux, and SASS.</span></h3>
+                            <p>When I first started playing with React and Redux, I tangled myself up in all sorts of logic knots, because, while I understood a good bit of JavaScript, I was still pretty uncomfortable with ES6 and some of its more advanced features.</p>
+                            <p>I built this project with create-react-app after taking a deep dive into JS fundamentals and some of the functional-programming paradigms on which React and Redux are based.</p>
+                            <p>The ability to add multiple lists created a data structure that was a bit more complex than a standard to-do application.</p>
+                            <p>I also wanted to make use of SASS, flexbox, and the Block-Element-Modifier method to create a responsive, maintainable design that follows best practices.</p>
+                        </div>
+                        
+
                     </div>
-    
-                </div>
-                <div class="project">
-                    <div class="project__img">
-                                
+                    <div class="project">
+                        <div class="project__preview">
+                            <a href="https://evanperriello.github.io/whelmed-app-redux/">
+                                <img class="project__img" alt="whelmed todo app" src="img/whelmed.jpg">
+                            </a>
+                            <div class="project__buttons">
+                            <a class="btn btn--outline" href="https://evanperriello.github.io/whelmed-app-redux/">
+                                    visit the site
+                                </a>
+                                <a class="btn btn--outline" href="https://github.com/evanperriello/whelmed-app-redux">
+                                    view on github
+                                </a> 
+                            </div>
+                        </div>
+                            
+                        <div class="project__text">
+                            <h3 class="project__title">whelmed 2
+                            <span class="project__subtitle">A to-do app allowing mutiple lists built with React, Redux, and SASS.</span></h3>
+                            <p>When I first started playing with React and Redux, I tangled myself up in all sorts of logic knots, because, while I understood a good bit of JavaScript, I was still pretty uncomfortable with ES6 and some of its more advanced features.</p>
+                            <p>I built this project with create-react-app after taking a deep dive into JS fundamentals and some of the functional-programming paradigms on which React and Redux are based.</p>
+                            <p>The ability to add multiple lists created a data structure that was a bit more complex than a standard to-do application.</p>
+                            <p>I also wanted to make use of SASS, flexbox, and the Block-Element-Modifier method to create a responsive, maintainable design that follows best practices.</p>
+                        </div>
+                        
+
                     </div>
-        
+                    <div class="project">
+                        <div class="project__preview">
+                            <a href="https://evanperriello.github.io/whelmed-app-redux/">
+                                <img class="project__img" alt="whelmed todo app" src="img/whelmed.jpg">
+                            </a>
+                            <div class="project__buttons">
+                                <a class="btn btn--outline" href="https://github.com/evanperriello/whelmed-app-redux">
+                                    view on github
+                                </a> 
+                            </div>
+                        </div>
+                            
+                        <div class="project__text">
+                            <h3 class="project__title">my portfolio
+                            <span class="project__subtitle">Built with Sass, Gulp, and vanilla JavaScript.</span></h3>
+                            <p>While I love the power of advanced libraries and frameworks, I always try to keep in mind what tools are actually necessary for a job and what can be done with the basics.</p>
+                            <p>As such, I wanted to create a portfolio that was responsive, lightly animated, and user-friendly without any overhead.</p>
+                        </div>
+                        
+
+                    </div>
                 </div>
 
             </div>
 
         </section>
         <section class="writing">
-                <div class="container web__content">
-                        <h2 class="section__title">Writing</h2>
+                <div class="container">
+                        <h2 class="section__title">Some Writing</h2>
                         <div class="section__text">
                             
                             
