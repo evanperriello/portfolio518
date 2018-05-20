@@ -8,6 +8,9 @@
     transition: all .2s;
     top:50%;
     transform: translateY(-50%);
+    @media (max-width: $tablet){
+        display:none;
+    }
 
     &:hover {opacity:1;}
 

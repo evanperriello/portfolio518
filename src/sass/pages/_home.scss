@@ -5,6 +5,9 @@
     background-position: top;
     padding-top:10rem;
     color:$dark-grey-2;
+    @media (max-width: $phone){
+        padding-top:18rem;
+    }
 
     
     &__content {
@@ -24,4 +27,21 @@
 }
 .writing {
     position:relative;
+}
+.footer {
+    background:$dark-grey-1;
+    color:white;
+    font-weight:300;
+    display:flex;
+    justify-content: center;
+
+    &__text {
+        text-align:center;
+    }
+    &__link {
+        color:$color-primary-mid;
+    }
+    &__link:hover {
+        color:$color-primary-light;
+    }
 }

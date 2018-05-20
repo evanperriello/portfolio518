@@ -8,7 +8,6 @@
                 this.noClick = false;
             }
             slide(arrow){
-                console.log('sliding');
                 const slides = this.slides;
                 const nextSlide = slides[this.count + 1] || slides[0];
                 const prevSlide = slides[this.count - 1] || slides[slides.length - 1];
@@ -73,17 +72,6 @@
             slides: document.querySelectorAll("#writing-projects .project")
         });
         writingSlider.attach();
-
-        // const writingSlider = new Slider({
-        //     name: 'writing',
-        //     initialCount: 0, 
-        //     time: 100, 
-        //     slides: document.querySelectorAll("#write-projects .project")
-        // });
-        // writingSlider.attach();
-
-
-
     }
 
 )();

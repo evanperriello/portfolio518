@@ -1,7 +1,9 @@
 .container {
     padding:1rem 6rem;
     width:100%;
-    
+    @media (max-width: $tablet){
+        padding:1rem;
+    }
     &--content {
         max-width:120rem;
         margin:0 auto;
