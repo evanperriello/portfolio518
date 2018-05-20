@@ -48,11 +48,11 @@
             attach(){
                 document.getElementById(`${this.name}-next`).addEventListener(
                     'click',
-                    (e)=>{return webSlider.slide(e.target, "web")}
+                    (e)=>{return this.slide(e.target, this.name)}
                 )
                 document.getElementById(`${this.name}-prev`).addEventListener(
                     'click',
-                    (e)=>{return webSlider.slide(e.target, "web")}
+                    (e)=>{return this.slide(e.target, this.name)}
                 );
 
             }
@@ -61,18 +61,26 @@
         const webSlider = new Slider({
             name: 'web', 
             initialCount: 0, 
-            time: 300, 
+            time: 400, 
             slides: document.querySelectorAll("#web-projects .project")
         });
         webSlider.attach();
 
         const writingSlider = new Slider({
-            name: 'writing',
+            name: 'writing', 
             initialCount: 0, 
-            time: 100, 
-            slides: document.querySelectorAll("#write-projects .project")
+            time: 400, 
+            slides: document.querySelectorAll("#writing-projects .project")
         });
         writingSlider.attach();
+
+        // const writingSlider = new Slider({
+        //     name: 'writing',
+        //     initialCount: 0, 
+        //     time: 100, 
+        //     slides: document.querySelectorAll("#write-projects .project")
+        // });
+        // writingSlider.attach();
 
 
 

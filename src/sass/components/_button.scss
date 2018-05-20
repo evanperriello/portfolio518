@@ -7,15 +7,19 @@
     width:15rem;
     text-align:center;
     transition: all .3s;
+    box-shadow:.3rem .3rem .5rem 0px $black;
+    border: .3rem solid $light-grey-1;
+    border-radius:.8rem;
     &--outline {
         background:inherit;
-        border: .3rem solid $light-grey-1;
-        border-radius:.8rem;
         box-shadow:.3rem .3rem .5rem 0px $black;
     }
     &--outline:hover {
         background:$light-grey-1;
         color:$dark-grey-2;
         transform:scale(1.1);
+    }
+    &--read-more {
+        
     }
 }
